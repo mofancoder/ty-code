@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: toubiao-service
+    #集成SPRING-DATA-JPA
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    spring:
+      jpa:
+        hibernate:
+          naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+  datasource:
+    url: jdbc:mysql://47.107.242.209:3306/where?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    username: root
+    password: mofan@123
+    driver-class-name: com.mysql.jdbc.Driver
+    tomcat:
+      max-active: 20
+      max-idle: 8
+      min-idle: 8
+      initial-size: 10
+  redis:
+    host: 47.107.242.209
+    password: mofan123
+    port: 6379
+    jedis:
+      pool:
+        max-idle: 100
+        min-idle: 1
+        max-active: 1000
+        max-wait: -1
+    enabled: true
+
+server:
+  port: 9002
+  servlet:
+    context-path: /ty-toubiao
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/

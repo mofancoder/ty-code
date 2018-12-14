@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ty-eureka
+server:
+  port: 9000
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ty-eureka
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+
+debug: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["*"]
