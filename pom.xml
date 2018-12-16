@@ -11,6 +11,7 @@
         <module>ty-zhaobiao</module>
         <module>ty-toubiao</module>
         <module>ty-common</module>
+        <module>ty-jobtask</module>
     </modules>
     <packaging>pom</packaging>
 

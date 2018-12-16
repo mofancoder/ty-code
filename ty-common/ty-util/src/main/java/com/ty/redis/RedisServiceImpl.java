@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class RedisServiceImpl implements RedisService{
 
-    @Autowired
+    @Autowired(required = false)
     public RedisTemplate<String,Object> redisTemplate;
 
     @Override
