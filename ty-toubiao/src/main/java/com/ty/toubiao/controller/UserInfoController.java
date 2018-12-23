@@ -2,7 +2,7 @@ package com.ty.toubiao.controller;
 
 import com.ty.redis.RedisService;
 import com.ty.toubiao.bean.UserInfo;
-import com.ty.toubiao.dao.UserInfoDao;
+import com.ty.toubiao.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/userInfo")
 public class UserInfoController {
 
-    private UserInfoDao userInfoService;
+    private UserInfoService userInfoService;
 
     @Autowired
     public RedisService redisService;
 
     @Autowired
-    public UserInfoController(UserInfoDao userInfoService){
+    public UserInfoController(UserInfoService userInfoService){
         this.userInfoService = userInfoService;
     }
 

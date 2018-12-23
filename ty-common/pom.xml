@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>ty-util</module>
-        <module>ty-dto</module>
+        <module>ty-bean</module>
     </modules>
 
 
