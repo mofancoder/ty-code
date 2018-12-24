@@ -2,6 +2,7 @@ package com.ty.zhaobiao;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
@@ -19,15 +20,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @RestController
 @EnableSwagger2
 @ComponentScan(basePackages = "com")
+@EntityScan("com.bean.dto")
 public class ZhaoBiaoApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ZhaoBiaoApplication.class,args);
-    }
-
-    @RequestMapping(value="/hello",method = RequestMethod.GET)
-    public String hello(String id){
-        return "hello:"+id;
     }
 
 }

@@ -1,7 +1,7 @@
 package com.ty.zhaobiao.controller;
 
-import com.hello.dto.HelloDto;
-import com.hello.vo.HelloVO;
+import com.bean.dto.HelloDto;
+import com.bean.vo.HelloVO;
 import com.ty.zhaobiao.service.HelloService;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;

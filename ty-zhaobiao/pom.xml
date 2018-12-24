@@ -61,7 +61,7 @@
         <!--ty-common-->
         <dependency>
             <groupId>com.zhulong</groupId>
-            <artifactId>ty-bean</artifactId>
+            <artifactId>ty-common-core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 

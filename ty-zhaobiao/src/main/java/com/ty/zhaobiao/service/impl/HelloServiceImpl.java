@@ -1,6 +1,6 @@
 package com.ty.zhaobiao.service.impl;
 
-import com.hello.dto.HelloDto;
+import com.bean.dto.HelloDto;
 import com.ty.zhaobiao.dao.HelloDao;
 import com.ty.zhaobiao.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 /**
  * @author MOFAN889
  * @ProjectName ty-core
- * @Description: TODO
+ * @Description: helloServiec
  * @date 2018/12/23 002316:12
  */
 @Service("helloService")

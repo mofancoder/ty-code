@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>ty-util</module>
-        <module>ty-bean</module>
+        <module>ty-common-core</module>
     </modules>
 
 
