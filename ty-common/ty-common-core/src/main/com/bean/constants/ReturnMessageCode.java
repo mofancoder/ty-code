@@ -19,7 +19,6 @@ public class ReturnMessageCode {
     public static ReturnMessageCode ACCOUNT_OR_PASSWORD_WRONG = new ReturnMessageCode("50003","账号或者密码错误");
     public static ReturnMessageCode LOGIN_TIMEOUT = new ReturnMessageCode("50004","登录超时");
 
-
     public ReturnMessageCode(String retCode, String retMessage) {
         this.retCode = retCode;
         this.retMessage = retMessage;

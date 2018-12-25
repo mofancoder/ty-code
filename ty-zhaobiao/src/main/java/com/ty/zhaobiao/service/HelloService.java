@@ -10,4 +10,5 @@ import com.ty.service.BaseService;
  * @date 2018/12/23 002316:09
  */
 public interface HelloService extends BaseService<HelloDto,String> {
+
 }
