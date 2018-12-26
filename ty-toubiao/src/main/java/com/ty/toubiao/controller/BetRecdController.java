@@ -1,7 +1,7 @@
 package com.ty.toubiao.controller;
 
 import com.ty.toubiao.bean.BetRecd;
-import com.ty.toubiao.service.BetRecdService;
+import com.ty.toubiao.dao.BetRecdRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,10 +14,10 @@ import java.math.BigInteger;
 @RequestMapping("/betRecd")
 public class BetRecdController {
 
-    private BetRecdService betRecdService;
+    private BetRecdRepository betRecdService;
 
     @Autowired
-    public BetRecdController(BetRecdService betRecdService){
+    public BetRecdController(BetRecdRepository betRecdService){
         this.betRecdService = betRecdService;
     }
 

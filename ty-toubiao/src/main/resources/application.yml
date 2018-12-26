@@ -6,6 +6,7 @@ spring:
     database: mysql
     show-sql: true
     hibernate:
+      #自动更新，在没有表的时候会自动创建，在有表的时候会自动更新
       ddl-auto: update
     spring:
       jpa:
@@ -13,9 +14,10 @@ spring:
           naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
         properties:
           hibernate:
-            dialect: org.hibernate.dialect.MySQL5Dialect
+            dialect: org.hibernate.dialect.MySQL5Dialec
+            enable_lazy_load_no_trans: true
   datasource:
-    url: jdbc:mysql://47.107.242.209:3306/where?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    url: jdbc:mysql://47.107.242.209:3306/where?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false
     username: root
     password: mofan@123
     driver-class-name: com.mysql.jdbc.Driver

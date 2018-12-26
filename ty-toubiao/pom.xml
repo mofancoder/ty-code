@@ -71,6 +71,19 @@
             <artifactId>spring-boot-starter-redis</artifactId>
             <version>1.2.6.RELEASE</version>
         </dependency>
+
+        <!--swagger-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+
+        <!--单元测试-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version> 4.12</version>
+        </dependency>
     </dependencies>
 
 </project>

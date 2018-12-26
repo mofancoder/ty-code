@@ -17,7 +17,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableFeignClients
 @EnableDiscoveryClient
 @EnableAsync
-@RestController
 @EnableSwagger2
 @ComponentScan(basePackages = "com")
 @EntityScan("com.bean.dto")
